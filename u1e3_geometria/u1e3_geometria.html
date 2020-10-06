@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <titl>Geometria</title>
+        <meta name="author" content="David Granda Brysemael" />
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="formulas.js"></script><!--se conecta mediante este enlace a las formulas de cada tipo -->
+        <script src="datos.js"></script><!--se conecta a los datos para poder hacer las formulas-->
+</head>
+
+<body>
+    <script>
+        document.write("el area del triangulo es:  " + Area(b, a));
+        document.write("</br>el perimetro del triangulo equilatero es: " + perimetroTrianguloEquilatero(l));
+        document.write("</br>el perimetro del triangulo isosceles es: " + perimetroTrianguloIsosceles(l1, l2));
+        document.write("</br>el area del triangulo Escaleno es:" + permietroTrianguloEscaleno(l1, l2, l3));
+        document.write("</br>el area del Cuadrado" + areaCuadrado(l));
+        document.write("</br>el Perimetro del cuadrado es: " + perimetroCuadrado(l));
+        document.write("</br>el area  del rectangulo es:" + areaRectangulo(l1, l2));
+        document.write("</br>el area del circulo es :" + areaCirculo(r));
+        document.write("</br>la longitud de la circunferencia es: " + longitudCircunferencia(r));
+    </script>
+</body>
+
+</html>

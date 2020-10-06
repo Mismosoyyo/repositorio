@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> funcionesanonimas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+
+<!--estos son ejemplos con sus variables ya establecidas sin pedir nada al usuario-->
+
+</head>
+
+<body>
+    <script>
+        var area = function(a, b) {
+            return (b * a) / 2;
+        };
+        var totalArea = area(3, 6);
+        alert("el area del triangulo es:  " + totalArea);
+
+        var perimetroTrianguloEquilatero = function(l) {
+            return (l * 3);
+        };
+        var totalPerimetro = perimetroTrianguloEquilatero(6);
+
+        alert("el perimetro del triangulo equilatero es: " + totalPerimetro);
+
+        var perimetroTrianguloIsosceles = function(l1, l2) {
+            return (2 * (l1 + l2));
+        };
+        var totalIsosceles = perimetroTrianguloIsosceles(3, 6);
+
+
+        alert("el perimetro del triangulo isosceles es: " + totalIsosceles);
+
+        var permietroTrianguloEscaleno = function(l1, l2, l3) {
+            return (l1 + l2 + l3);
+        };
+        var totalEscaleno = permietroTrianguloEscaleno(3, 6, 8);
+
+        alert("el area del triangulo Escaleno es:" + totalEscaleno);
+
+        var areaCuadrado = function(l) {
+            return (l * l);
+        };
+        var totalCuadrado = areaCuadrado(6);
+
+        alert("el area del Cuadrado es: " + totalCuadrado);
+
+        var areaRectangulo = function(l1, l2) {
+            return (l1 * l2);
+        };
+        var totalareaRectangulo = areaRectangulo(3, 6);
+
+        alert("el area  del rectangulo es: " + totalareaRectangulo);
+
+        var perimetroCuadrado = function(l) {
+            return (l * l);
+        };
+        var totalPerimetroCuadrado = perimetroCuadrado(3);
+
+        alert("el Perimetro del cuadrado es: " + totalPerimetroCuadrado);
+
+        var r = 8;
+        alert((function() {
+            return (2 * Math.PI * r);
+        }()));
+    </script>
+
+
+
+</body>
+
+</html>

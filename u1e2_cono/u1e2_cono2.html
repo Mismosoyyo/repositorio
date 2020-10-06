@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- -->
+<html>
+
+<head>
+    <meta name="author" content="David Granda Brysemael" />
+    <meta charset="UTF-8">
+</head>
+<p>El volumen del cono es: </p>
+<p id=vol></p>
+
+<body>
+    <script>
+        var altura = prompt("Cual es la altura?"); //sale un mensaje que el usuario inserta la altura y radio
+        var radio = prompt("Cual es el radio?");
+        var res;
+        altura = parseInt(altura); // se pasa los datos a la variable de digito a numerico
+        radio = parseInt(radio);
+        res = (1 / 3 * Math.PI * radio * radio * altura); // calcula mediante la funcion math el numero pi
+        document.getElementById("vol").innerHTML = res; // inserta el resultado en vol
+    </script>
+</body>
+
+</html>
