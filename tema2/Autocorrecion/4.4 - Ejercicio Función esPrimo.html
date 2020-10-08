@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <script>
+        function esPrimo(num) {// creacion de la funcion 
+
+            var Primo;
+            i = 0;
+            Primo = true;
+
+            for (i = 2; i < num; i++) {
+                if (num % 1 == 0) {
+                    Primo = false;
+                }
+            }
+            if (Primo == true) {
+                return alert("el numero " + num + "es primo ");
+
+            } else {
+                return alert("el numero " + num + " no es primo ");
+            }
+
+        }
+
+        var num;
+        num1 = parseInt(prompt("inserta un numero"));// el usuario me te el numero
+        resultado = esPrimo(num1);// se llama a la funcion y se guarda en resultado en resultado
+        alert(resultado);// te dice si es o no primo 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <p id="txt"></p>
+    <script>
+        cont = 0;
+        numAnt = "";
+        txt = "";
+        var cantNumALeer = prompt("Cuantos numeros quieres que se lean ?");
+        do{
+            var num = prompt("Introduce un numero: ");
+            txt = num + txt;
+            numAnt = num;
+            cont ++;
+        }while(cont<cantNumALeer)
+        document.getElementById("txt").innerHTML=txt;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <script>
+        var dinero = prompt("Introduce la cantidad de dinero");// el usuario inserta el dinero que quiere cambiar
+        var numBilletes = 0;// la variable tiene valor de 0
+        if (dinero % 5 == 0){
+            if ((dinero - 500) >=0){
+                dinero = dinero -500;
+                numBilletes++;
+            }
+            if((dinero - 200)>=0){
+                dinero = dinero -200;
+                numBilletes++;
+            }
+            if((dinero - 100)>=0){         // si se cumple una secuencia lo agrega en el resultado
+                dinero = dinero -100;
+                numBilletes++;
+            }
+            if((dinero - 50)>=0){
+                dinero = dinero -50;
+                numBilletes++;
+            }
+            if((dinero - 20)>=0){
+                dinero = dinero -20;
+                numBilletes++;
+            }
+            if((dinero - 10)>=0){
+                dinero = dinero -10;
+                numBilletes++;
+            }
+            if((dinero - 5)>=0){
+                dinero = dinero - 5;
+                numBilletes++;
+            }
+            alert("Te devolverán "+ numBilletes + " billetes");// te imprime en pantalla el resultado de los billetes que tienes de cambio
+        }else{
+            alert("Introduce un multiplo de 5");// en caso de meter una cantidad no multiplo de 5 sale un error en pantalla diciendo q metas bien el dato
+        }
+    </script>
+</body>
+
+</html>

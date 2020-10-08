@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <script>
+        horas= prompt("Inserta las horas trabajadas");
+        precio = prompt("inserta el precio x hora");
+        
+        if(hora>35){
+            sueldoBruto = hora*(1.5*precio);
+        }else{
+            saldoBruro = hora*precio;
+        }
+
+        if(sueldoBruto <500){
+            retencionImpuestos = 0
+        }else if(sueldoBruto>500 & sueldoBruto<900){
+            retencionImpuestos = 0.25 * sueldoBruto;
+        }else{
+            retencionImpuestos = 0.45 * sueldoBruto;
+        }
+        salarioFinal = sueldoBruto - retencionImpuestos;
+        document.write("Tu salario final es: " + salarioFinal);
+    </script>
+
+</body>
+
+</html>

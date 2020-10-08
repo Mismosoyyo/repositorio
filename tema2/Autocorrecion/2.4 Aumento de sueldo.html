@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <script>
+        sueldo = prompt("Inserta el sueldo");// le pide al usuario q inserte un sueldo y lo vuelca en la variable sueldo
+        Antiguedad = prompt("inserta la antiguedad"); //le pide al usuario q inserte la antiguedad y lo vuelca en la variable antiguedad
+
+// dependiendo si el sueldo es menor que 500 y antiguedad es mayor de 10  multiplica x 3 el salario 
+        if (sueldo < 500 && Antiguedad > 10) {
+            document.write("tu sueldo a aumentado en " + sueldo * 3);
+        }// imprime si el sueldo es menor de 500 y la antiguedad menor de 10  un aumento de 2 veces el salario 
+         else if (sueldo < 500 && Antiguedad < 10) {
+            document.write("tu sueldo a aumentado en " + sueldo * 2);
+        } // y si no lo cumple entonces deja el sueldo como esta
+        else if (sueldo => 500) {
+            document.write("tu sueldo es " + sueldo);
+        }
+    </script>
+
+</body>
+
+</html>

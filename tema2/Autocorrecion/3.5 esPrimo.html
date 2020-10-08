@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Granda Brysemael" />
+   
+</head>
+
+<body>
+    <script>
+        var num, primo;
+        num = parseInt(prompt("inserta un numero"));// INSERTA UN NUMERO EL USUARIO
+        i = 0;
+        Primo = true;
+
+        for (i = 2; i < num; i++) { 
+            if (num % 1 == 0) {// SI EL NUMERO ES DIVISIBLE ENTRE 1 Y = A 0 NO ES PRIMO 
+                Primo = false;
+
+            }
+        }
+        if (Primo == true) {
+            document.write("el numero " + num + "es primo ");
+
+        } else {
+            document.write("el numero " + num + " no es primo ");
+
+        }
+    </script>
+
+</body>
+
+</html>

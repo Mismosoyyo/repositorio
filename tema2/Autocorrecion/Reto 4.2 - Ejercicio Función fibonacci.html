@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+</head>
+
+<body>
+    <script>
+        function fibonacci(numero) {
+            var var1 = 0;
+            var var2 = 1;
+            var var3;
+
+            for (var i = 0; i < numero; i++) {
+                var3 = var1;
+                var1 = var2;
+                var2 = var3 + var2;
+                document.write(var3 + " ");
+            }
+        }
+
+        var n = parseInt(prompt("dime un numero"));
+        var Result = fibonacci(n);
+    </script>
+
+</body>
+
+</html>
