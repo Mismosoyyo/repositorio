@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+        <meta name="author" content="David Granda Brysemael" />
+    <meta charset="utf-8">
+    <title></title>
+
+</head>
+
+<body>
+    <table border="1">
+
+
+        <h1>horario </h1>
+
+        <script>
+            for (var i = 8; i < 10; i++) { // para poder marcar el cero he ingresado en este for el cero para que la hora salga como dice el enunciado
+                document.write("<br>" + "0" + i + ":00 ");
+                document.write("<br>" + "0" + i + ":15 ");
+                document.write("<br>" + "0" + i + ":30 ");
+                document.write("<br>" + "0" + i + ":45 ");
+            }
+
+            for (var i = 10; i < 20; i++) {
+
+                document.write("<br>" + i + ":00 ");
+                document.write("<br>" + i + ":15 ");
+                document.write("<br>" + i + ":30 ");
+                document.write("<br>" + i + ":45 ");
+            }
+
+            for (var i = 20; i < 21; i++) {
+                document.write("<br>" + i + ":00 ");
+                document.write("<br>" + i + ":15 ");
+                document.write("<br>" + i + ":30 ");
+
+            } // he creado tres bucles  ya que silo hicera solo con dos la hora terminaria a las 20:45 y el ejercicio dice que termine a las 20:30
+        </script>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+        <meta name="author" content="David Granda Brysemael" />
+        <body>
+<script >
+    // esta funcion nos muestra un mensaje de tru o false dependiendo si se cumple o no los operadores
+function mostrarMensaje() {
+var a, b, c, d, eTexto;
+a = 2; b = 7; c = true; d = false; eTexto = '1';
+alert ('VERDADERO: ' + (a+b > 8 && a-b < 1));
+alert ('FALSO: ' + (a+b == 8 && a-b ==-2));
+alert ('VERDADERO: ' + (c || d));
+alert ('FALSO: ' + (c == d));
+alert ('FALSO: ' + (!c));
+alert ('FALSO: ' + (eTexto === 1));
+alert ('FALSO: ' + (eTexto > 1 && eTexto != "Caracol"));
+alert ('VERDADERO: ' + ('Zapato' != 'almendra'));
+}
+mostrarMensaje();
+</script>
+</head>
+</body>
+</html>

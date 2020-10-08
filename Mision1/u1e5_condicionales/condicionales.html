@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Localidad de Madrid</title>
+	</head>
+
+	<body>
+		<script>
+			localidad ="";// el programa mediante un pront pregunta al usuario una serie de preguntas
+			var resLoc = prompt("¿Es una localidad del sur? SI/NO"); 
+			var resMontaña = prompt("¿Tiene Montaña?");
+
+			// dependiendo que es lo q conteste el usuario el programa corteja el resultado y dice la poblacion que es , si no encuentra la respuesta sale un alter diciendo que responda bien
+			if (resLoc == "SI" && resMontaña == "SI"){
+				localidad = "Aranjuez";
+			}else if (resLoc == "SI" && resMontaña == "NO"){
+				localidad = "Parla";
+			}else if(resLoc == "NO" && resMontaña == "SI"){
+				localidad = "Hoyo de manzanares";
+			}else if(resLoc == "NO" && resMontaña == "NO"){
+				localidad = "Galapagar";
+			}else{
+				alert("Error Escribe SI / NO");
+			}
+			alert(localidad);
+		</script>
+	</body>
+</html>

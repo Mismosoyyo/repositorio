@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Granda Brysemael" />
+
+
+</head>
+
+<body>
+    <script>
+        // calcula para sacar los multipes de tres y los pasa a resto
+        function multiple(valor, multiple) {
+            resto = valor % multiple;
+            if (resto == 0)
+                return true;
+            else
+                return false;
+        }
+
+        // Arrays que contendran los valores multiples del 3 
+        var multiples_3 = [];
+
+
+
+        // bucle del 1 al 100
+        for (var i = 0; i <= 100; i++) {
+            multiple(i, 3);
+            if (resto == 0) {
+                continue;
+            }
+
+            document.write("</br> " + i);
+        }
+
+
+        var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "Septiembre", "octubre", "noviembre", "diciembre"];
+
+
+        for (i = 0; i <= 11; i++) {
+            if (i == 6 || i == 7) {
+
+                continue;
+            }
+
+            alert(meses[i]);
+        }
+    </script>
+</body>
+
+</html>

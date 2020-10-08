@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="author" content="David Granda Brysemael" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var nombre = "David Granda"; //Este es el texto que queremos que ingrese el usuario
+        var pos = nombre.indexOf(" "); //para localizar valores dentro de la cadena 
+        var leng = nombre.length;
+        var log = leng - 1;
+
+
+
+        do {
+            var pregunta = prompt("¿dime tu nombre completo?"); //esta seria la pregunta que sale al usuario
+
+
+            if (pregunta == nombre) {
+                break // esto es para si la contestacion es correcta a la primera nos pasa directamente a la web 
+            }
+
+            if (pregunta != nombre) { // si algun dato esta mal sale primero este error 
+                alert("intentalo de nuevo esta mal algun dato ");
+            }
+            if (pregunta.length == pos) { // al preguntar la longitud es diferente a su posicion saltaria que falta el aepllido
+                alert("falta el apellido insertalo bien");
+            }
+            if (pregunta.length != pos) {
+                alert(" falta el nombre insertalo bien ");
+            }
+
+        }
+        while (pregunta != nombre) {
+
+            document.write("has ingresado en la web");
+        }
+    </script>
+</body>
+
+</html>
